@@ -1,0 +1,74 @@
+\documentclass{resume}
+
+\usepackage{hyperref}
+
+\begin{document}
+
+\name{Stéphane Travostino}
+\contact{London, UK}{\href{mailto:sph@combo.cc}{sph@combo.cc}}{\href{https://github.com/1player}{github.com/1player}}
+
+\section{Profile}
+Experienced in diverse areas of Information Technology, I am a fluent C, Go and Python software analyst and developer half of the time, while the other half is spent installing, tuning and configuring Linux and Solaris based servers, from small VPS to large enterprise clusters.
+
+\section{Technical Expertise}
+
+\begin{itemize}
+  \item Fluent in C, Google Go and Python (2 and 3) development under POSIX compliant systems, mainly Linux and Solaris.
+  \item In-depth knowledge of GNU/Linux operating systems, specifically RHEL, CentOS, Debian/Ubuntu and Archlinux distributions.
+  \item Web development with AngularJS, jQuery and ReactJS.
+  \item Maintenance and tuning of MySQL version 4.0 to 5.x systems, master/slave and circular replications and backup techniques.
+  \item Experience with Bash, Ruby and Scheme/Racket scripting.
+  \item Distributed systems technologies such as Celery and ZeroMQ.
+  \item Redis, MongoDB and PostgreSQL database systems.
+  \item Reverse engineering and penetration testing techniques, in Linux and Windows environments.
+  \item Excellent networking knowledge and iptables based configurations on Linux systems.
+  \item RedHat, Heartbeat/DRBD and Symantec Cluster Server high-availability suites.
+\end{itemize}
+
+\section{Work Experience}
+
+\datedsubsection{Precipice Labs}{Sep 2014--Present}
+MySQL DBA and PHP backend developer
+
+MySQL DBA in charge of performance tuning and adapting the current schema to support millions of users and thousand concurrent connections.
+
+Backend PHP engineer developing new features while refactoring the existing code base, implementing unit tests and setting up a coding standard for future developers.
+
+\datedsubsection{Kocoverk Mobile Tech}{Aug 2014--Present}
+Embedded C developer
+
+Maintenance of a C protocol translation application interfaced with multiple hardware devices via UDP protocol. Keeps track of devices metadata and sends relevant state changes to a PHP backend.
+
+\datedsubsection{EMMEGI S.p.A.}{Jul 2014--Present}
+Django web developer
+
+Web design and backend development of a web application for clients and agents to find the heat exchanger configuration that best satisfies their requirements.
+
+By entering the heat dissipation factors, a list of product best matching the parameters are returned, with interactive power dissipation charts and the ability to generate a PDF with all the technical information for further reference.
+
+The software is installed on a Linux VPS server, with automated backups and real-time monitoring.
+
+\datedsubsection{General Software}{Sep 2013--May 2014}
+PHP web developer and Linux systems administrator
+
+Web design and development of a single-page Laravel+AngularJS dashboard interfaced with the in-house monitoring system inspired by Nagios and BB4.
+
+Features include real-time updates through HTML5 Server-Sent events, reporting, log monitoring and configuration, customly tailored for non-technical users.
+
+\datedsubsection{Silver Spring Networks}{Mar 2012--Sep 2014}
+Embedded / full stack C and Python developer
+
+Design and development of a Django web interface to aggregate and coordinate geographically distributed hardware appliances, powered by the upcoming ZigBee Smart Energy standard to monitor, control, inform and automate the delivery and use of solar power generators.
+
+Single-page web application based on AngularJS to enable technicians to configure and keep track of the solar generators installed throughout the United States. The bidirectional data flow, based on XML, is collected by background Celery processes, stored on a PostgreSQL database and presented in real-time on the dashboard.
+
+\datedsubsection{Buongiorno}{Jul 2008--Sep 2011}
+MySQL DBA and Linux systems administrator
+
+Installation, configuration and performance tuning of about 150 MySQL instances on 50 RHEL5 servers, processing an average of 3500 queries per second.
+
+Lead architect of a Python+Flask web interface to manage the MySQL instances through a single server, to ease the daily workload of the database administrator by automating the management of user credentials, creation and deletions of reporting tables and presenting at a glance the status of the whole infrastructure.
+
+Design and implementation of a company-wide OpenLDAP solution, automatically replicated from the corporate Active Directory infrastructure, to provide granular access to the IT resources to about 1200 employees.
+
+\end{document}
