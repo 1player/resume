@@ -3,15 +3,13 @@
 **Style:**
 
 - [ ] Fix hyperlink highlight style
-- [ ] Get a font with proper small caps for company titles
-- [ ] Hanging bullet points
+- [ ] Get a proper font
 
 **Content:**
 
-- [ ] Update Profile section
-- [ ] Trim and update Technical Expertise section
-- [ ] Update Work Experience section
-- [ ] Make it all fit into a single page
+- [x] Trim and update Technical Expertise section
+- [x] Update Work Experience section
+- [x] Make it all fit into a single page
 
 ## See also
 

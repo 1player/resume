@@ -7,68 +7,59 @@
 \name{Stéphane Travostino}
 \contact{London, UK}{\href{mailto:sph@combo.cc}{sph@combo.cc}}{\href{https://github.com/1player}{github.com/1player}}
 
-\section{Profile}
-Experienced in diverse areas of Information Technology, I am a fluent C, Go and Python software analyst and developer half of the time, while the other half is spent installing, tuning and configuring Linux and Solaris based servers, from small VPS to large enterprise clusters.
-
-\section{Technical Expertise}
+\section{TECHNICAL EXPERTISE}
 
 \begin{itemize}
-  \item Fluent in C, Google Go and Python (2 and 3) development under POSIX compliant systems, mainly Linux and Solaris.
-  \item In-depth knowledge of GNU/Linux operating systems, specifically RHEL, CentOS, Debian/Ubuntu and Archlinux distributions.
-  \item Web development with AngularJS, jQuery and ReactJS.
-  \item Maintenance and tuning of MySQL version 4.0 to 5.x systems, master/slave and circular replications and backup techniques.
-  \item Experience with Bash, Ruby and Scheme/Racket scripting.
-  \item Distributed systems technologies such as Celery and ZeroMQ.
-  \item Redis, MongoDB and PostgreSQL database systems.
-  \item Reverse engineering and penetration testing techniques, in Linux and Windows environments.
-  \item Excellent networking knowledge and iptables based configurations on Linux systems.
-  \item RedHat, Heartbeat/DRBD and Symantec Cluster Server high-availability suites.
+\item Fluent in C, Go, Rust, Elixir, and Python software development.
+\item In-depth knowledge of GNU/Linux operating systems, low-level networking, containerization and orchestration technologies such as Docker, Kubernetes and modern best practices to administer a server infrastructure: GitOps, CI/CD, Terraform, Ansible.
+\item Frontend web development with React, Vue, Tailwind and Phoenix LiveView.
+\item Linux and web application security and hardening, reverse engineering techniques.
 \end{itemize}
 
-\section{Work Experience}
+\section{WORK EXPERIENCE}
 
-\datedsubsection{Precipice Labs}{Sep 2014--Present}
-MySQL DBA and PHP backend developer
+\datedsubsection{Punters Lounge}{2015--2021}
+\jobtitle{Technical Director}
 
-MySQL DBA in charge of performance tuning and adapting the current schema to support millions of users and thousand concurrent connections.
+\begin{itemize}
+\item Starting as a freelance consultant, was hired in 2018 as Technical Director to oversee the engineering aspect of the company. In 2020, after the untimely demise of the Managing Director, took on part of the administrative concerns, such as managing the employees day-to-day and preparing for a smooth handover in case of sale.
+\item Replaced the aging monolithic PHP CMS with an end-to-end tested Elixir service that ingests and deduplicates bookmaker data and odds from multiple providers, and serves it via GraphQL to a React web application.
+\item Deprecated the old ad-hoc server infrastructure, added Terraform configurations for all servers, and packaged internal and public-facing services into containers running on a multi-node Docker Swarm cluster, deployed by an automated CI/CD process.
+\end{itemize}
 
-Backend PHP engineer developing new features while refactoring the existing code base, implementing unit tests and setting up a coding standard for future developers.
+\datedsubsection{Kocoverk Mobile Tech}{2014--2015}
 
-\datedsubsection{Kocoverk Mobile Tech}{Aug 2014--Present}
-Embedded C developer
+\begin{itemize}
+\item Ground-up implementation of a Rust backend application interfacing with multiple geo-distributed devices via UDP protocol. Keeps track of devices metadata and sends relevant state changes to a PHP backend.
+\item Maintenance of a C backend application that interfaces with older versions of the protocol, for legacy devices.
+\end{itemize}
 
-Maintenance of a C protocol translation application interfaced with multiple hardware devices via UDP protocol. Keeps track of devices metadata and sends relevant state changes to a PHP backend.
+\datedsubsection{Silver Spring Networks}{2012--2014}
+\jobtitle{Full-stack software engineer}
 
-\datedsubsection{EMMEGI S.p.A.}{Jul 2014--Present}
-Django web developer
+\begin{itemize}
+\item Design and development of a Django web interface to aggregate and coordinate geographically distributed hardware appliances, running the ZigBee Smart Energy protocol to monitor, control, inform and automate the delivery and use of solar power generators.
+\item Developed a single-page web application based on AngularJS to enable technicians to configure and keep track of the solar generators installed throughout the United States.
+\end{itemize}
 
-Web design and backend development of a web application for clients and agents to find the heat exchanger configuration that best satisfies their requirements.
 
-By entering the heat dissipation factors, a list of product best matching the parameters are returned, with interactive power dissipation charts and the ability to generate a PDF with all the technical information for further reference.
+\datedsubsection{Buongiorno}{2008--2011}
+\jobtitle{Linux systems administrator}
 
-The software is installed on a Linux VPS server, with automated backups and real-time monitoring.
+\begin{itemize}
+\item Part of a small team of DBAs dedicated to the maintenance and performance tuning of about 150 MySQL instances.
+\item Architect of a Flask web app to manage all MySQL instances through a single interface, to ease the daily workload of the database administrator by automating the management of user credentials, creation and deletions of reporting tables and presenting at a glance the status of the whole infrastructure.
+\item Design of a company-wide OpenLDAP solution, automatically replicated from the corporate Active Directory infrastructure, to provide granular access to the IT resources to about 1200 employees.
+\end{itemize}
 
-\datedsubsection{General Software}{Sep 2013--May 2014}
-PHP web developer and Linux systems administrator
+\datedsubsection{General Software}{2006--2008}
 
-Web design and development of a single-page Laravel+AngularJS dashboard interfaced with the in-house monitoring system inspired by Nagios and BB4.
+\begin{itemize}
+\item Design and ground-up development of GsView, an IT infrastructure monitoring system for Linux and Solaris inspired by Nagios and BB4.
+\item PHP web development.
+\item Various Linux and Solaris system administration tasks for more than 10 different
+  customers.
+\end{itemize}
 
-Features include real-time updates through HTML5 Server-Sent events, reporting, log monitoring and configuration, customly tailored for non-technical users.
-
-\datedsubsection{Silver Spring Networks}{Mar 2012--Sep 2014}
-Embedded / full stack C and Python developer
-
-Design and development of a Django web interface to aggregate and coordinate geographically distributed hardware appliances, powered by the upcoming ZigBee Smart Energy standard to monitor, control, inform and automate the delivery and use of solar power generators.
-
-Single-page web application based on AngularJS to enable technicians to configure and keep track of the solar generators installed throughout the United States. The bidirectional data flow, based on XML, is collected by background Celery processes, stored on a PostgreSQL database and presented in real-time on the dashboard.
-
-\datedsubsection{Buongiorno}{Jul 2008--Sep 2011}
-MySQL DBA and Linux systems administrator
-
-Installation, configuration and performance tuning of about 150 MySQL instances on 50 RHEL5 servers, processing an average of 3500 queries per second.
-
-Lead architect of a Python+Flask web interface to manage the MySQL instances through a single server, to ease the daily workload of the database administrator by automating the management of user credentials, creation and deletions of reporting tables and presenting at a glance the status of the whole infrastructure.
-
-Design and implementation of a company-wide OpenLDAP solution, automatically replicated from the corporate Active Directory infrastructure, to provide granular access to the IT resources to about 1200 employees.
 
 \end{document}
