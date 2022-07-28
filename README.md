@@ -1,4 +1,4 @@
-My resume.
+My resume. Rendered version here: https://raw.githubusercontent.com/1player/resume/master/resume.pdf
 
 ## Inspired by
 
