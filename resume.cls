@@ -5,10 +5,11 @@
 \RequirePackage{fontspec}
 \RequirePackage{geometry}
 \RequirePackage{enumitem}
+\RequirePackage{parskip}
 
 \pagestyle{empty}
 \geometry{a4paper,margin={1.618cm, 1cm}}
-\setlist[itemize]{align=parleft,left=0pt..1em}
+\setlist[itemize]{align=parleft,left=1em..2em}
 
 % Try this one out...
 % \usepackage{microtype}
@@ -24,22 +25,17 @@
   \centerline{#1 {\large\textperiodcentered} #2 {\large\textperiodcentered} #3}
 }
 
-\newcommand{\datedsubsection}[2]{
-  \subsection[#1]{#1 \hfill #2}
+\newcommand{\datedsubsection}[3]{
+  \filbreak
+  \subsection[#1]{{\scshape #1}{\hspace{0.5em}}{\small\bfseries #2} \hfill #3}
 }
 
-\newcommand{\jobtitle}[1]{
-  \vspace{-5pt}
-  {\small\emph{#1}}
+\newcommand{\stack}[1]{
+  {\qquad\small\itshape Keywords: #1}
+  \vspace{1ex}
 }
+
 
 \newcommand{\raisedrulefill}[2][0ex]{\leaders\hbox{\rule[#1]{1pt}{#2}}\hfill}
-\titleformat{\section}{\titlerule\vspace{.5ex}\small\scshape\raggedright\bfseries}{}{0em}{#1}
+\titleformat{\section}{\vspace{2ex}\titlerule\vspace{-1ex}\small\scshape\raggedright\bfseries}{}{0em}{#1}
 \titleformat{\subsection}{\Large\scshape\raggedright}{}{0em}{#1}
-
-%% \let\olditemize=\itemize%
-%% \let\endolditemize=\enditemize%
-%% \renewenvironment{itemize}{
-%%   \olditemize%
-%%   \setlength\itemsep{0em}
-%% }{\endolditemize}
